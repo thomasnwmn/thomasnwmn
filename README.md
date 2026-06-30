@@ -1,7 +1,7 @@
-# Thomas Newman 👋
+# Thomas Newman
 ### Computer Engineering student at YorkU
 
-I love coding, gaming, working with circuits, and spending long hours at the library (can't forget about sleeping)! 
+I am a Computer Engineering student at the Lassonde School of Engineering at York University.  I am keenly interested in Object-Oriented Programming, Computer Organization & Architecture, and Digital Logic Design.  In my free time, I love gaming, and spending long hours at the library. 
 
 ## My Apps
 
@@ -12,8 +12,6 @@ I love coding, gaming, working with circuits, and spending long hours at the lib
 1. [Personal Website](https://github.com/oop1-10/oop1-10.github.io)
 2. [YorkU WebRing](https://github.com/oop1-10/webring)
 3. [WUWA Build Tracker](https://github.com/oop1-10/wuwabuilds)
-4. [Multiplayer Chess game (WIP)](https://github.com/oop1-10/chessgame)
-5. [Prompt Background Chrome Extension](https://github.com/oop1-10/prompt-background)
 
 <!--
 **oop1-10/oop1-10** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
