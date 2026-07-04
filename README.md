@@ -14,7 +14,7 @@
 
 <!-- About Me Section -->
 <div align="center">
-  <h3>👨‍💻 About Me</h3>
+  <h3>About Me</h3>
 </div>
 
 - I am currently studying **Computer Engineering** at the Lassonde School of Engineering, York University.
@@ -31,7 +31,7 @@
   <h3>My Projects</h3>
 
 
-| 🌟 Project | 🔗 Link |
+| Project | Link |
 | :--- | :--- |
 | **Pantry** | [pantry.thomasnewman.ca](https://pantry.thomasnewman.ca) |
 | **Personal Website** | [github.com/thomasnwmn/thomasnwmn.github.io](https://github.com/thomasnwmn/thomasnwmn.github.io) |
