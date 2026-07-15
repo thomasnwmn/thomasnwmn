@@ -11,7 +11,10 @@ def make_request(url, headers, data=None):
     req = urllib.request.Request(url, data=data, headers=headers)
     try:
         with urllib.request.urlopen(req) as response:
-            return json.loads(response.read().decode('utf-8'))
+            body = response.read().decode('utf-8')
+            if not body:
+                return None
+            return json.loads(body)
     except urllib.error.URLError as e:
         print(f"Request failed: {e}")
         return None
