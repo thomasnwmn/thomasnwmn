@@ -24,8 +24,8 @@ def fetch_github_stats(token):
     }
     
     username_data = make_request('https://api.github.com/user', headers)
-    if not username_data:
-        print("Failed to fetch user data")
+    if not username_data or 'login' not in username_data:
+        print(f"Failed to fetch user data. Check if your token is valid and has 'read:user' scope. Response: {username_data}")
         return None
     
     user_query = {"query": "query { viewer { id } }"}
@@ -61,8 +61,8 @@ def fetch_github_stats(token):
     
     graphql_req = {"query": repo_query % user_id}
     data_res = make_request('https://api.github.com/graphql', headers, graphql_req)
-    if not data_res:
-        print("Failed to fetch GraphQL data")
+    if not data_res or 'errors' in data_res:
+        print(f"Failed to fetch GraphQL data: {data_res.get('errors') if data_res else 'Network/Auth Error'}")
         return None
         
     data = data_res['data']['viewer']
