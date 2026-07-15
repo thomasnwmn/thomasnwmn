@@ -144,22 +144,14 @@ def update_svg(filename, stats):
 if __name__ == "__main__":
     token = os.environ.get('GH_TOKEN')
     if not token:
-        print("GH_TOKEN environment variable not set.")
-        print("Using dummy data for preview")
-        stats = {
-            'repo_data': "42",
-            'contrib_data': "12",
-            'star_data': "1337",
-            'commit_data': "1,234",
-            'follower_data': "99",
-            'loc_data': "446,276",
-            'loc_add': "523,178",
-            'loc_del': "76,902"
-        }
-    else:
-        stats = fetch_github_stats(token)
-        if not stats:
-            sys.exit(1)
+        print("ERROR: GH_TOKEN environment variable is not set!")
+        print("To run this locally, use: $env:GH_TOKEN=\"your_token\"; python update_stats.py")
+        print("Or run it via GitHub Actions where the secret is configured.")
+        sys.exit(1)
+        
+    stats = fetch_github_stats(token)
+    if not stats:
+        sys.exit(1)
             
     update_svg('darkmode.svg', stats)
     update_svg('lightmode.svg', stats)
