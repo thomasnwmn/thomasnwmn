@@ -5,19 +5,31 @@ import json
 import re
 import sys
 
-def make_request(url, headers, data=None):
+def make_request(url, headers, data=None, retries=3):
+    import time
     if data:
         data = json.dumps(data).encode('utf-8')
-    req = urllib.request.Request(url, data=data, headers=headers)
-    try:
-        with urllib.request.urlopen(req) as response:
-            body = response.read().decode('utf-8')
-            if not body:
-                return None
-            return json.loads(body)
-    except urllib.error.URLError as e:
-        print(f"Request failed: {e}")
-        return None
+    
+    for attempt in range(retries):
+        req = urllib.request.Request(url, data=data, headers=headers)
+        try:
+            with urllib.request.urlopen(req) as response:
+                if response.status == 202:
+                    # 202 Accepted means GitHub is computing stats in background
+                    time.sleep(2)
+                    continue
+                body = response.read().decode('utf-8')
+                if not body:
+                    return None
+                return json.loads(body)
+        except urllib.error.URLError as e:
+            if hasattr(e, 'code') and e.code == 202:
+                time.sleep(2)
+                continue
+            print(f"Request failed for {url}: {e}")
+            return None
+    
+    return None
 
 def fetch_github_stats(token):
     headers = {
@@ -140,9 +152,9 @@ if __name__ == "__main__":
             'star_data': "1337",
             'commit_data': "1,234",
             'follower_data': "99",
-            'loc_data': "0",
-            'loc_add': "0",
-            'loc_del': "0"
+            'loc_data': "446,276",
+            'loc_add': "523,178",
+            'loc_del': "76,902"
         }
     else:
         stats = fetch_github_stats(token)
