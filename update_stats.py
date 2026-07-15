@@ -37,6 +37,7 @@ def fetch_github_stats(token):
       viewer {
         repositories(first: 100, ownerAffiliations: OWNER, isFork: false) {
           nodes {
+            name
             stargazerCount
             defaultBranchRef {
               target {
@@ -78,11 +79,24 @@ def fetch_github_stats(token):
             
     total_contributed = data['repositoriesContributedTo']['totalCount']
     total_followers = data['followers']['totalCount']
+    username = username_data['login']
     
-    # LOC features (commented out in functionality for now, hardcoded 0s)
-    loc_total = "0"
-    loc_add = "0"
-    loc_del = "0"
+    loc_add = 0
+    loc_del = 0
+
+    for repo in repos:
+        repo_name = repo['name']
+        stats_url = f"https://api.github.com/repos/{username}/{repo_name}/stats/contributors"
+        contributors = make_request(stats_url, headers)
+        
+        if isinstance(contributors, list):
+            for contributor in contributors:
+                if contributor.get('author') and contributor['author'].get('login', '').lower() == username.lower():
+                    for week in contributor.get('weeks', []):
+                        loc_add += week.get('a', 0)
+                        loc_del += week.get('d', 0)
+                        
+    loc_total = loc_add - loc_del
     
     return {
         'repo_data': str(total_repos),
@@ -90,9 +104,9 @@ def fetch_github_stats(token):
         'star_data': str(total_stars),
         'commit_data': f"{total_commits:,}",
         'follower_data': str(total_followers),
-        'loc_data': str(loc_total),
-        'loc_add': str(loc_add),
-        'loc_del': str(loc_del)
+        'loc_data': f"{loc_total:,}",
+        'loc_add': f"{loc_add:,}",
+        'loc_del': f"{loc_del:,}"
     }
 
 def update_svg(filename, stats):
