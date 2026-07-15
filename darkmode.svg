@@ -5,7 +5,7 @@
             src: local('Consolas'), local('Consolas Bold');
             font-family: 'ConsolasFallback';
             font-display: swap;
-            -webkit-size-adjust: 50%;
+            -webkit-size-adjust: 70%;
             size-adjust: 70%;
         }
         .key {fill: #ffa657;}
