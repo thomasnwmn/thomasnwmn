@@ -121,7 +121,7 @@
             <tspan x="450" y="1020" class="cc">. </tspan><tspan class="key">Start Date</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value" id="book_start_date">2026-07-01</tspan>
 
             <!-- Recently Completed Section -->
-            <tspan x="1050" y="820">- Recently Completed</tspan> -———————————————————————-—-
+            <tspan x="1050" y="820">- Recently Completed</tspan> -——————————————————-—-
             <tspan x="1050" y="860" class="cc">. </tspan><tspan class="value" id="past_book_0">1. Wool by Hugh Howey (in progress)</tspan>
             <tspan x="1050" y="900" class="cc">. </tspan><tspan class="value" id="past_book_1"></tspan>
             <tspan x="1050" y="940" class="cc">. </tspan><tspan class="value" id="past_book_2"></tspan>
