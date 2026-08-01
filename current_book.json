@@ -1,0 +1,17 @@
+{
+    "current_book": {
+        "title": "Wool",
+        "author": "Hugh Howey",
+        "image_path": "books/wool.jpg",
+        "pages": 508,
+        "current_page": 256
+    },
+    "past_books": [
+        {
+            "title": "Wool",
+            "author": "Hugh Howey",
+            "pages": 508,
+            "completion_date": "in progress"
+        }
+    ]
+}
