@@ -149,8 +149,8 @@ if __name__ == "__main__":
             update_single_svg_text(svg_file, "book_total_pages", str(pages))
             update_single_svg_text(svg_file, "book_current_page", str(current_page))
             
-            # Update Past Books (Safely handles up to 3 books)
-            for i in range(min(3, len(past_books))):
+            # Update Past Books (Safely handles up to 10 books)
+            for i in range(min(10, len(past_books))):
                 pb = past_books[i]
                 pb_text = f"{i + 1}. {pb['title']} by {pb['author']} ({pb['completion_date']})"
                 update_single_svg_text(svg_file, f"past_book_{i}", pb_text)

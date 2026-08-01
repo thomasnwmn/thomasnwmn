@@ -79,7 +79,7 @@
             <tspan x="850" y="190" class="cc">. </tspan><tspan class="key">Interests</tspan>.<tspan class="key">Hardware</tspan>:<tspan class="cc"> .......... </tspan><tspan class="value">Digital Logic Design</tspan>
             <tspan x="850" y="230" class="cc">. </tspan><tspan class="key">Hobbies</tspan>:<tspan class="cc"> ..................... </tspan><tspan class="value">Gaming, Studying</tspan>
             <tspan x="850" y="270" class="cc">. </tspan>
-            <tspan x="850" y="310" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Programming</tspan>:<tspan class="cc"> ....... </tspan><tspan class="value">C++, Python, Java, C</tspan>
+            <tspan x="850" y="310" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Programming</tspan>:<tspan class="cc"> ....... </tspan><tspan class="value">C/C++, Python, Java</tspan>
             <tspan x="850" y="350" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Markup</tspan>:<tspan class="cc"> ............ </tspan><tspan class="value">HTML, CSS</tspan>
             <tspan x="850" y="430">- Contact</tspan> -——————————————————————————————————————————————-—-
             <tspan x="850" y="470" class="cc">. </tspan><tspan class="key">GitHub</tspan>:<tspan class="cc"> ...................... </tspan><tspan class="value">thomasnwmn</tspan>
@@ -91,7 +91,7 @@
             <tspan x="850" y="750" class="cc">. </tspan><tspan class="key">Lines of Code on GitHub</tspan>:<tspan class="cc" id="loc_data_dots"> </tspan><tspan class="value" id="loc_data">1,457,724</tspan> (<tspan class="addColor" id="loc_add">1,484,948</tspan><tspan class="addColor">++</tspan>, <tspan id="loc_del_dots"></tspan><tspan class="delColor" id="loc_del">27,224</tspan><tspan class="delColor">--</tspan>)
         </text>
 
-        <text x="15" y="810" fill="#c9d1d9" class="ascii">
+        <!-- <text x="15" y="810" fill="#c9d1d9" class="ascii">
             <tspan x="15" y="820" id="books_art0">########&amp;&amp;###$$$XX$&amp;$$XX$&amp;&amp;&amp;XX$$&amp;#################</tspan>
             <tspan x="15" y="835" id="books_art1">######$X#x$+x;$+x;:+xX::;;::+.x+;XX&amp;$#$$$X$&amp;######</tspan>
             <tspan x="15" y="850" id="books_art2">######&amp;&amp;#&amp;#&amp;X+&amp;X$X+Xx$;;;+;;X;Xx;x$&amp;$##&amp;&amp;#&amp;#######</tspan>
@@ -109,23 +109,28 @@
             <tspan x="15" y="1030" id="books_art14">##############&amp;$&amp;XXXXx++++;:;+;;x+x++:x;;:;xX$$$#&amp;</tspan>
             <tspan x="15" y="1045" id="books_art15">#############&amp;$X$XX+X+xx;;+;+++;.:+:.:++:::;++X$##</tspan>
 
-        </text>
+        </text> -->
 
         <text x="450" y="800" fill="#c9d1d9" class="side-text">
             <!-- Currently Reading Section -->
-            <tspan x="450" y="820">- Currently Reading</tspan> -————————————————————————-—-
-            <tspan x="450" y="860" class="cc">. </tspan><tspan class="key">Title</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value" id="book_title">Wool</tspan>
-            <tspan x="450" y="900" class="cc">. </tspan><tspan class="key">Author</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value" id="book_author">Hugh Howey</tspan>
-            <tspan x="450" y="940" class="cc">. </tspan><tspan class="key">Total Pages</tspan>:<tspan class="cc"> .......... </tspan><tspan class="value" id="book_total_pages">508</tspan> | <tspan class="key">Pages Read</tspan>: <tspan class="value" id="book_current_page">256</tspan>
-            <tspan x="450" y="980" class="cc">. </tspan><tspan class="key">Progress</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value" id="book_progress_bar">[██████-------]</tspan> <tspan class="value" id="book_progress_text">50.4%</tspan>
-            <tspan x="450" y="1020" class="cc">. </tspan><tspan class="key">Start Date</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value" id="book_start_date">2026-07-01</tspan>
+            <tspan x="15" y="800">- Currently Reading</tspan> -————————————————————————-—-
+            <tspan x="15" y="840" class="cc">. </tspan><tspan class="key">Title</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value" id="book_title">Wool</tspan>
+            <tspan x="15" y="880" class="cc">. </tspan><tspan class="key">Author</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value" id="book_author">Hugh Howey</tspan>
+            <tspan x="15" y="920" class="cc">. </tspan><tspan class="key">Total Pages</tspan>:<tspan class="cc"> .......... </tspan><tspan class="value" id="book_total_pages">508</tspan> | <tspan class="key">Pages Read</tspan>: <tspan class="value" id="book_current_page">256</tspan>
+            <tspan x="15" y="960" class="cc">. </tspan><tspan class="key">Progress</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value" id="book_progress_bar">[██████-------]</tspan> <tspan class="value" id="book_progress_text">50.4%</tspan>
+            <tspan x="15" y="1000" class="cc">. </tspan><tspan class="key">Start Date</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value" id="book_start_date">2026-07-01</tspan>
 
             <!-- Recently Completed Section -->
-            <tspan x="1050" y="820">- Recently Completed</tspan> -——————————————————-—-
-            <tspan x="1050" y="860" class="cc">. </tspan><tspan class="value" id="past_book_0">1. Wool by Hugh Howey (in progress)</tspan>
-            <tspan x="1050" y="900" class="cc">. </tspan><tspan class="value" id="past_book_1"></tspan>
-            <tspan x="1050" y="940" class="cc">. </tspan><tspan class="value" id="past_book_2"></tspan>
-            <tspan x="1050" y="980" class="cc">. </tspan><tspan class="value" id="past_book_3"></tspan>
-            <tspan x="1050" y="1020" class="cc">. </tspan><tspan class="value" id="past_book_4"></tspan>
+            <tspan x="600" y="800">- Recently Completed</tspan> -————————————————————————————————————————————————————————-—-
+            <tspan x="600" y="840" class="cc">. </tspan><tspan class="value" id="past_book_0">1. Wool by Hugh Howey (in progress)</tspan>
+            <tspan x="600" y="880" class="cc">. </tspan><tspan class="value" id="past_book_1"></tspan>
+            <tspan x="600" y="920" class="cc">. </tspan><tspan class="value" id="past_book_2"></tspan>
+            <tspan x="600" y="960" class="cc">. </tspan><tspan class="value" id="past_book_3"></tspan>
+            <tspan x="600" y="1000" class="cc">. </tspan><tspan class="value" id="past_book_4"></tspan>
+            <tspan x="1080" y="840" class="cc">. </tspan><tspan class="value" id="past_book_0"></tspan>
+            <tspan x="1080" y="880" class="cc">. </tspan><tspan class="value" id="past_book_1"></tspan>
+            <tspan x="1080" y="920" class="cc">. </tspan><tspan class="value" id="past_book_2"></tspan>
+            <tspan x="1080" y="960" class="cc">. </tspan><tspan class="value" id="past_book_3"></tspan>
+            <tspan x="1080" y="1000" class="cc">. </tspan><tspan class="value" id="past_book_4"></tspan>
         </text>
 </svg>
