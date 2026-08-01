@@ -1,0 +1,47 @@
+name: Update Currently Reading SVG
+
+on:
+  # Triggers the action when you push changes to the JSON file or the books image folder
+  push:
+    paths:
+      - 'current_book.json'
+      - 'books/**'
+      - 'update_books.py'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch: 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required to allow the bot to push commits to your repo
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: pip install Pillow
+
+      - name: Run Python Script
+        run: python update_books.py # Ensure this matches your script's filename
+
+      - name: Commit and Push Changes
+        run: |
+          # Set up the bot's identity
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Stage the updated SVGs
+          git add darkmode.svg lightmode.svg
+          
+          # Only commit if there are actual changes, preventing pipeline failures
+          git diff --staged --quiet || git commit -m "Auto-update currently reading book"
+          
+          # Push the changes back to the main branch
+          git push
