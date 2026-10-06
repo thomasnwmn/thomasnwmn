@@ -8,10 +8,15 @@
     },
     "past_books": [
         {
-            "title": "Wool",
-            "author": "Hugh Howey",
-            "pages": 508,
-            "completion_date": "in progress"
+            "title": "Komi Can't Communicate",
+            "author": "Oda Tomohito",
+            "pages": 500,
+            "completion_date": "04/10/2025"
+        },{
+            "title": "My Dress-Up Darling",
+            "author": "Fukuda Shinichi",
+            "pages": 115,
+            "completion_date": "03/22/2025"
         }
     ]
 }
