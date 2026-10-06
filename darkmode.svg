@@ -122,8 +122,8 @@
 
             <!-- Recently Completed Section -->
             <tspan x="600" y="800">- Recently Completed</tspan> -————————————————————————————————————————————————————————-—-
-            <tspan x="600" y="840" class="cc">. </tspan><tspan class="value" id="past_book_0">1. Komi Can't Communicate by Oda Tomohito (04/10/2025)</tspan>
-            <tspan x="600" y="880" class="cc">. </tspan><tspan class="value" id="past_book_1">2. My Dress-Up Darling by Fukuda Shinichi (03/22/2025)</tspan>
+            <tspan x="600" y="840" class="cc">. </tspan><tspan class="value" id="past_book_0">1. Komi Can't Communicate (04/10/2025)</tspan>
+            <tspan x="600" y="880" class="cc">. </tspan><tspan class="value" id="past_book_1">2. My Dress-Up Darling (03/22/2025)</tspan>
             <tspan x="600" y="920" class="cc">. </tspan><tspan class="value" id="past_book_2"></tspan>
             <tspan x="600" y="960" class="cc">. </tspan><tspan class="value" id="past_book_3"></tspan>
             <tspan x="600" y="1000" class="cc">. </tspan><tspan class="value" id="past_book_4"></tspan>
