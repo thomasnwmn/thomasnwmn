@@ -91,7 +91,7 @@
             <tspan x="850" y="750" class="cc">. </tspan><tspan class="key">Lines of Code on GitHub</tspan>:<tspan class="cc" id="loc_data_dots">. </tspan><tspan class="value" id="loc_data">1,479,793</tspan> ( <tspan class="addColor" id="loc_add">1,528,458</tspan><tspan class="addColor">++</tspan>, <tspan id="loc_del_dots"> </tspan><tspan class="delColor" id="loc_del">48,665</tspan><tspan class="delColor">--</tspan> )
         </text>
 
-        <text x="450" y="800" fill="#c9d1d9" class="side-text">
+        <text x="450" y="800" fill="#24292f" class="side-text">
             <!-- Currently Reading Section -->
             <tspan x="15" y="800">- Currently Reading</tspan> -————————————————————————-—-
             <tspan x="15" y="840" class="cc">. </tspan><tspan class="key">Title</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value" id="book_title">Wool</tspan>
