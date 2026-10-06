@@ -152,7 +152,7 @@ if __name__ == "__main__":
             # Update Past Books (Safely handles up to 10 books)
             for i in range(min(10, len(past_books))):
                 pb = past_books[i]
-                pb_text = f"{i + 1}. {pb['title']} by {pb['author']} ({pb['completion_date']})"
+                pb_text = f"{i + 1}. {pb['title']} ({pb['completion_date']})"
                 update_single_svg_text(svg_file, f"past_book_{i}", pb_text)
 
         print(f"Successfully updated SVG with '{current_book['title']}' at {progress_text}.")
