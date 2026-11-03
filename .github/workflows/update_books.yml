@@ -36,24 +36,29 @@ jobs:
       - name: Install Dependencies
         run: pip install Pillow
 
-      - name: Run Python Script
+      - name: Update SVGs and Push Changes
         env:
           MAL_USERNAME: Homuresu
-        run: python update_books.py
-
-      - name: Commit and Push Changes
         run: |
           # Set up the bot's identity
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Stage the updated SVGs
-          git add darkmode.svg lightmode.svg
+          for attempt in 1 2 3; do
+            python update_books.py
 
-          # Only commit if there are actual changes, preventing pipeline failures
-          git diff --staged --quiet && exit 0
-          git commit -m "Auto-update currently reading manga"
+            # Stage the updated SVGs
+            git add darkmode.svg lightmode.svg
 
-          # The stats workflow also pushes to main, so rebase onto it before pushing
-          git pull --rebase
-          git push
+            # Only commit if there are actual changes, preventing pipeline failures
+            git diff --staged --quiet && exit 0
+            git commit -m "Auto-update currently reading manga"
+            git push && exit 0
+  
+            # The stats workflow also rewrites these SVGs, and git can't merge the two edits. Throw away our commit and regenerate on top of the latest main.
+            echo "Push rejected, rebuiling on latest main (attempt $attempt)"
+            git fetch origin main
+            git reset --hard origin/main
+            sleep 5
+          done
+          exit 1
