@@ -1,9 +1,10 @@
 name: Update Currently Reading SVG
 
 on:
-  # Pulls the latest manga list from MyAnimeList every 6 hours
+  # MAL has no webhooks, so poll the manga list every 15 minutes.
+  # The SVGs are only committed when a chapter/status change shows up.
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '*/15 * * * *'
   # Triggers the action when you push changes to the script
   push:
     paths:
@@ -11,6 +12,11 @@ on:
       - '.github/workflows/update_books.yml'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+
+# Don't let a slow run overlap with the next poll
+concurrency:
+  group: update-books
+  cancel-in-progress: false
 
 jobs:
   build:
