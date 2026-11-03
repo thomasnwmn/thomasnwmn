@@ -92,41 +92,41 @@
         </text>
 
         <!-- <text x="15" y="810" fill="#c9d1d9" class="ascii">
-            <tspan x="15" y="820" id="books_art0">########&amp;&amp;###$$$XX$&amp;$$XX$&amp;&amp;&amp;XX$$&amp;#################</tspan>
-            <tspan x="15" y="835" id="books_art1">######$X#x$+x;$+x;:+xX::;;::+.x+;XX&amp;$#$$$X$&amp;######</tspan>
-            <tspan x="15" y="850" id="books_art2">######&amp;&amp;#&amp;#&amp;X+&amp;X$X+Xx$;;;+;;X;Xx;x$&amp;$##&amp;&amp;#&amp;#######</tspan>
-            <tspan x="15" y="865" id="books_art3">#############+x++;$X;+::+;;::$;+++$X###&amp;##########</tspan>
-            <tspan x="15" y="880" id="books_art4">#############$XXx+$&amp;x++:+Xx;;$XxXX&amp;$##############</tspan>
-            <tspan x="15" y="895" id="books_art5">##############&amp;#&amp;&amp;$&amp;$&amp;$XX$XX$X&amp;$&amp;#######&amp;&amp;########</tspan>
-            <tspan x="15" y="910" id="books_art6">###$X####XX###$+x$$+.    +$XX$;     x##&amp;:.$#######</tspan>
-            <tspan x="15" y="925" id="books_art7">####+$##X++&amp;##+;$X..X#&amp;X:  &amp;X: ;&amp;#&amp;X  &amp;$. x#######</tspan>
-            <tspan x="15" y="940" id="books_art8">#&amp;##$+##+#X;#X $#+ $###$$: &amp;&amp; ;#####&amp; ;x  +&amp;######</tspan>
-            <tspan x="15" y="955" id="books_art9">#&amp;&amp;##xXxX##.; :#&amp;$ .#&amp;&amp;$x .#&amp;  $&amp;$##; xx  +$######</tspan>
-            <tspan x="15" y="970" id="books_art10">######;+###$ .&amp;##&amp;x..... :x#&amp;x. .   :x++    :;X###</tspan>
-            <tspan x="15" y="985" id="books_art11">############&amp;&amp;##$$&amp;&amp;$+;;;;xxX$Xx;;;$$$x;::;+$&amp;####</tspan>
-            <tspan x="15" y="1000" id="books_art12">################$X$X$X++;;;;;Xx;xx$$xXx++++x&amp;#####</tspan>
-            <tspan x="15" y="1015" id="books_art13">################&amp;::;XX .:+. .+X  .Xx++x+;;+x$$$&amp;##</tspan>
-            <tspan x="15" y="1030" id="books_art14">##############&amp;$&amp;XXXXx++++;:;+;;x+x++:x;;:;xX$$$#&amp;</tspan>
-            <tspan x="15" y="1045" id="books_art15">#############&amp;$X$XX+X+xx;;+;+++;.:+:.:++:::;++X$##</tspan>
+            <tspan x="15" y="820" id="books_art0">+  #########$     #########&amp;                      </tspan>
+            <tspan x="15" y="835" id="books_art1">   ##########    x#########$        .::           </tspan>
+            <tspan x="15" y="850" id="books_art2">   ###########  ;##########x                     +</tspan>
+            <tspan x="15" y="865" id="books_art3">.  ###########; ###########+                     X</tspan>
+            <tspan x="15" y="880" id="books_art4">   ########################+                      </tspan>
+            <tspan x="15" y="895" id="books_art5">   ########################+                      </tspan>
+            <tspan x="15" y="910" id="books_art6">   ########################X                     :</tspan>
+            <tspan x="15" y="925" id="books_art7">   ####X###############x###&amp;                     .</tspan>
+            <tspan x="15" y="940" id="books_art8">  ;####x###############X####                   . ;</tspan>
+            <tspan x="15" y="955" id="books_art9">  +###&amp;X###############+####                     .</tspan>
+            <tspan x="15" y="970" id="books_art10">  :###;################+####          +          :</tspan>
+            <tspan x="15" y="985" id="books_art11">  :###;################$####          X          :</tspan>
+            <tspan x="15" y="1000" id="books_art12">   ###$######X+#Xxx+++x;xXx$                     .</tspan>
+            <tspan x="15" y="1015" id="books_art13">   ::+;###### ;  .      :  .          X:x        .</tspan>
+            <tspan x="15" y="1030" id="books_art14">X.     ######;.+:;;;;..                           </tspan>
+            <tspan x="15" y="1045" id="books_art15">$;     ###$;xx$xx#$XXxX.  .;:.    :   .           </tspan>
 
         </text> -->
 
         <text x="450" y="800" fill="#c9d1d9" class="side-text">
             <!-- Currently Reading Section -->
             <tspan x="15" y="800">- Currently Reading</tspan> -————————————————————————-—-
-            <tspan x="15" y="840" class="cc">. </tspan><tspan class="key">Title</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value" id="book_title">Wool</tspan>
-            <tspan x="15" y="880" class="cc">. </tspan><tspan class="key">Author</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value" id="book_author">Hugh Howey</tspan>
-            <tspan x="15" y="920" class="cc">. </tspan><tspan class="key">Total Pages</tspan>:<tspan class="cc"> .......... </tspan><tspan class="value" id="book_total_pages">508</tspan> | <tspan class="key">Pages Read</tspan>: <tspan class="value" id="book_current_page">256</tspan>
-            <tspan x="15" y="960" class="cc">. </tspan><tspan class="key">Progress</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value" id="book_progress_bar">[██████-------]</tspan> <tspan class="value" id="book_progress_text">50.4%</tspan>
-            <tspan x="15" y="1000" class="cc">. </tspan><tspan class="key">Start Date</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value" id="book_start_date">2026-07-01</tspan>
+            <tspan x="15" y="840" class="cc">. </tspan><tspan class="key">Title</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value" id="book_title">Maybe Meant to Be</tspan>
+            <tspan x="15" y="880" class="cc">. </tspan><tspan class="key">Author</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value" id="book_author">Kkultarae</tspan>
+            <tspan x="15" y="920" class="cc">. </tspan><tspan class="key">Total Chapters</tspan>:<tspan class="cc"> ....... </tspan><tspan class="value" id="book_total_chapters">132</tspan> | <tspan class="key">Read</tspan>: <tspan class="value" id="book_current_chapter">45</tspan>
+            <tspan x="15" y="960" class="cc">. </tspan><tspan class="key">Progress</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value" id="book_progress_bar">[████---------]</tspan> <tspan class="value" id="book_progress_text">34.1%</tspan>
+            <tspan x="15" y="1000" class="cc">. </tspan><tspan class="key">Start Date</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value" id="book_start_date">2026-10-31</tspan>
 
             <!-- Recently Completed Section -->
             <tspan x="600" y="800">- Recently Completed</tspan> -————————————————————————————————————————————————————————-—-
-            <tspan x="600" y="840" class="cc">. </tspan><tspan class="value" id="past_book_0">1. Komi Can't Communicate (04/10/2025)</tspan>
-            <tspan x="600" y="880" class="cc">. </tspan><tspan class="value" id="past_book_1">2. My Dress-Up Darling (03/21/2025)</tspan>
-            <tspan x="600" y="920" class="cc">. </tspan><tspan class="value" id="past_book_2"></tspan>
-            <tspan x="600" y="960" class="cc">. </tspan><tspan class="value" id="past_book_3"></tspan>
-            <tspan x="600" y="1000" class="cc">. </tspan><tspan class="value" id="past_book_4"></tspan>
+            <tspan x="600" y="840" class="cc">. </tspan><tspan class="value" id="past_book_0">1. My Dress-Up Darling (03/22/2025)</tspan>
+            <tspan x="600" y="880" class="cc">. </tspan><tspan class="value" id="past_book_1">2. So Let's Start My Fam… (04/09/2024)</tspan>
+            <tspan x="600" y="920" class="cc">. </tspan><tspan class="value" id="past_book_2">3. Solo Leveling (02/12/2024)</tspan>
+            <tspan x="600" y="960" class="cc">. </tspan><tspan class="value" id="past_book_3">4. Boku to Gal ga Fuufu ni Naru made</tspan>
+            <tspan x="600" y="1000" class="cc">. </tspan><tspan class="value" id="past_book_4">5. Komi Can't Communicate</tspan>
             <tspan x="1080" y="840" class="cc">. </tspan><tspan class="value" id="past_book_5"></tspan>
             <tspan x="1080" y="880" class="cc">. </tspan><tspan class="value" id="past_book_6"></tspan>
             <tspan x="1080" y="920" class="cc">. </tspan><tspan class="value" id="past_book_7"></tspan>
