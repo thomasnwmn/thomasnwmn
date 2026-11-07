@@ -96,8 +96,8 @@
             <tspan x="15" y="800">- Currently Reading</tspan> -————————————————————————-—-
             <tspan x="15" y="840" class="cc">. </tspan><tspan class="key">Title</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value" id="book_title">Maybe Meant to Be</tspan>
             <tspan x="15" y="880" class="cc">. </tspan><tspan class="key">Author</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value" id="book_author">Kkultarae</tspan>
-            <tspan x="15" y="920" class="cc">. </tspan><tspan class="key">Total Chapters</tspan>:<tspan class="cc"> ....... </tspan><tspan class="value" id="book_total_chapters">132</tspan> | <tspan class="key">Read</tspan>: <tspan class="value" id="book_current_chapter">122</tspan>
-            <tspan x="15" y="960" class="cc">. </tspan><tspan class="key">Progress</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value" id="book_progress_bar">[████████████-]</tspan> <tspan class="value" id="book_progress_text">92.4%</tspan>
+            <tspan x="15" y="920" class="cc">. </tspan><tspan class="key">Total Chapters</tspan>:<tspan class="cc"> ....... </tspan><tspan class="value" id="book_total_chapters">132</tspan> | <tspan class="key">Read</tspan>: <tspan class="value" id="book_current_chapter">123</tspan>
+            <tspan x="15" y="960" class="cc">. </tspan><tspan class="key">Progress</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value" id="book_progress_bar">[████████████-]</tspan> <tspan class="value" id="book_progress_text">93.2%</tspan>
             <tspan x="15" y="1000" class="cc">. </tspan><tspan class="key">Start Date</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value" id="book_start_date">2026-10-31</tspan>
 
             <!-- Recently Completed Section -->
