@@ -96,8 +96,8 @@
             <tspan x="15" y="800">- Currently Reading</tspan> -————————————————————————-—-
             <tspan x="15" y="840" class="cc">. </tspan><tspan class="key">Title</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value" id="book_title">Monster</tspan>
             <tspan x="15" y="880" class="cc">. </tspan><tspan class="key">Author</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value" id="book_author">Urasawa Naoki</tspan>
-            <tspan x="15" y="920" class="cc">. </tspan><tspan class="key">Total Chapters</tspan>:<tspan class="cc"> ....... </tspan><tspan class="value" id="book_total_chapters">162</tspan> | <tspan class="key">Read</tspan>: <tspan class="value" id="book_current_chapter">1</tspan>
-            <tspan x="15" y="960" class="cc">. </tspan><tspan class="key">Progress</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value" id="book_progress_bar">[-------------]</tspan> <tspan class="value" id="book_progress_text">0.6%</tspan>
+            <tspan x="15" y="920" class="cc">. </tspan><tspan class="key">Total Chapters</tspan>:<tspan class="cc"> ....... </tspan><tspan class="value" id="book_total_chapters">162</tspan> | <tspan class="key">Read</tspan>: <tspan class="value" id="book_current_chapter">13</tspan>
+            <tspan x="15" y="960" class="cc">. </tspan><tspan class="key">Progress</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value" id="book_progress_bar">[█------------]</tspan> <tspan class="value" id="book_progress_text">8.0%</tspan>
             <tspan x="15" y="1000" class="cc">. </tspan><tspan class="key">Start Date</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value" id="book_start_date">2026-11-07</tspan>
 
             <!-- Recently Completed Section -->
