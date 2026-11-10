@@ -1,0 +1,68 @@
+name: Update Profile Card
+
+# One workflow fetches everything and renders both themes in a single commit,
+# so there is nothing for two jobs to race over.
+on:
+  # MAL has no webhooks, so poll every 15 minutes. GitHub stats are only
+  # refetched once they are 12 hours old (see fetch_github.py).
+  schedule:
+    - cron: '*/15 * * * *'
+  # Re-render when the card's code or content changes
+  push:
+    paths:
+      - '*.py'
+      - 'profile.json'
+      - 'portrait.txt'
+      - 'portrait_frames.json'
+      - '.github/workflows/update_profile.yml'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+concurrency:
+  group: update-profile
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required to allow the bot to push commits to your repo
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # A failed fetch keeps the data from the last good run instead of failing the build
+      - name: Fetch manga list
+        run: python fetch_manga.py || echo "::warning::Manga fetch failed, keeping previous data"
+
+      - name: Fetch GitHub stats
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python fetch_github.py || echo "::warning::GitHub fetch failed, keeping previous data"
+
+      - name: Render SVGs
+        run: python render.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json darkmode.svg lightmode.svg
+
+          # Only commit if there are actual changes
+          git diff --staged --quiet && exit 0
+          git commit -m "Update profile card"
+
+          for attempt in 1 2 3; do
+            git push && exit 0
+            echo "Push rejected, rebasing on latest main (attempt $attempt)"
+            git pull --rebase origin main
+            sleep 5
+          done
+          exit 1

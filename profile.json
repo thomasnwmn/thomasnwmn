@@ -1,0 +1,32 @@
+{
+    "name": "Thomas Newman",
+    "prompt": "thomas@newman",
+    "mal_username": "Homuresu",
+    "loc_exclude_repos": [],
+    "languages": {
+        "title": "Hardware Languages",
+        "focus": ["C", "C++", "Verilog", "SystemVerilog", "VHDL", "Assembly"]
+    },
+    "sections": [
+        {
+            "rows": [
+                ["Education", "Computer Engineering @ YorkU"],
+                ["Interests.Hardware", "Computer Org & Architecture"],
+                ["Interests.Hardware", "Digital Logic Design"],
+                ["Interests.Software", "Object-Oriented Programming"],
+                ["Hobbies", "Gaming, Studying"],
+                null,
+                ["Languages.Hardware", "Verilog, C/C++"],
+                ["Languages.Programming", "TSX, Python, Java"]
+            ]
+        },
+        {
+            "title": "Contact",
+            "rows": [
+                ["GitHub", "thomasnwmn"],
+                ["Website", "www.thomasnewman.ca"],
+                ["Email", "tnewman057@gmail.com"]
+            ]
+        }
+    ]
+}

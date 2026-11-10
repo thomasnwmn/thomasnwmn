@@ -1,0 +1,45 @@
+{
+  "updated": "2026-11-10T00:00:00Z",
+  "github": {
+    "repos": 25,
+    "contributed": 1,
+    "stars": 1,
+    "commits": 389,
+    "followers": 9,
+    "loc_add": 2358452,
+    "loc_del": 2259459,
+    "loc_cache": {}
+  },
+  "manga": {
+    "current": {
+      "id": null,
+      "title": "Monster",
+      "author": "Urasawa Naoki",
+      "chapters": 162,
+      "read": 16,
+      "start_date": "2026-11-07"
+    },
+    "completed": [
+      {
+        "title": "Maybe Meant to Be",
+        "finish_date": "11/07/2026"
+      },
+      {
+        "title": "Boku to Gal ga Fuufu ni Nattara",
+        "finish_date": "08/29/2025"
+      },
+      {
+        "title": "My Dress-Up Darling",
+        "finish_date": "03/22/2025"
+      },
+      {
+        "title": "Komi Can't Communicate",
+        "finish_date": "11/01/2024"
+      },
+      {
+        "title": "Solo Leveling",
+        "finish_date": "02/12/2024"
+      }
+    ]
+  }
+}
