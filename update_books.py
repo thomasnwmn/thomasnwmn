@@ -260,5 +260,7 @@ if __name__ == "__main__":
                 pb_title = truncate(display_title(pb), PAST_BOOK_WIDTH - len(prefix) - len(suffix))
                 pb_text = f"{prefix}{pb_title}{suffix}"
             update_single_svg_text(svg_file, f"past_book_{i}", pb_text)
+            # Hide the row's bullet too, so empty slots don't leave a stray dot
+            update_single_svg_text(svg_file, f"past_book_{i}_bullet", ". " if pb_text else "")
 
     print(f"Successfully updated SVG with '{title}' at {progress_text}.")

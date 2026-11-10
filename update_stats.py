@@ -5,6 +5,42 @@ import json
 import re
 import sys
 
+# Per-repo line counts from the last run that got an answer from GitHub
+LOC_CACHE_FILE = 'loc_cache.json'
+
+# Character columns the stats rows are laid out on: values in the left half
+# end where " | " starts, values in the right half end at RIGHT_END.
+LEFT_END = 33
+RIGHT_END = 56
+
+
+def leader(width):
+    """A dot leader exactly `width` characters wide, e.g. ' .... '."""
+    if width < 3:
+        return " " * max(width, 1)
+    return " " + "." * (width - 2) + " "
+
+
+def stat_leaders(stats):
+    """Sizes each dot leader to its value so the columns stay lined up as numbers grow."""
+    repos = f"{stats['repo_data']} {{Contributed: {stats['contrib_data']}}}"
+    right_width = RIGHT_END - LEFT_END - len(" | ")
+    return {
+        'repo_data_dots': leader(LEFT_END - len(". Repos:") - len(repos)),
+        'commit_data_dots': leader(LEFT_END - len(". Commits:") - len(stats['commit_data'])),
+        'star_data_dots': leader(right_width - len("Stars:") - len(stats['star_data'])),
+        'follower_data_dots': leader(right_width - len("Followers:") - len(stats['follower_data'])),
+    }
+
+
+def load_loc_cache():
+    try:
+        with open(LOC_CACHE_FILE, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
 def make_request(url, headers, data=None, retries=3):
     import time
     if data:
@@ -99,18 +135,38 @@ def fetch_github_stats(token):
     loc_add = 0
     loc_del = 0
 
+    old_cache = load_loc_cache()
+    loc_cache = {}
+
     for repo in repos:
         repo_name = repo['name']
         stats_url = f"https://api.github.com/repos/{username}/{repo_name}/stats/contributors"
         contributors = make_request(stats_url, headers)
-        
+
         if isinstance(contributors, list):
+            repo_add = 0
+            repo_del = 0
             for contributor in contributors:
                 if contributor.get('author') and contributor['author'].get('login', '').lower() == username.lower():
                     for week in contributor.get('weeks', []):
-                        loc_add += week.get('a', 0)
-                        loc_del += week.get('d', 0)
-                        
+                        repo_add += week.get('a', 0)
+                        repo_del += week.get('d', 0)
+            loc_cache[repo_name] = [repo_add, repo_del]
+        elif repo_name in old_cache:
+            # GitHub was still computing this repo's stats (or the request failed):
+            # reuse the last known numbers instead of counting it as zero
+            print(f"No stats for {repo_name} this run, using cached values")
+            loc_cache[repo_name] = old_cache[repo_name]
+        else:
+            continue
+
+        loc_add += loc_cache[repo_name][0]
+        loc_del += loc_cache[repo_name][1]
+
+    with open(LOC_CACHE_FILE, 'w', encoding='utf-8') as f:
+        json.dump(loc_cache, f, indent=2, sort_keys=True)
+        f.write("\n")
+
     loc_total = loc_add - loc_del
     
     return {
@@ -152,6 +208,8 @@ if __name__ == "__main__":
     stats = fetch_github_stats(token)
     if not stats:
         sys.exit(1)
-            
+
+    stats.update(stat_leaders(stats))
+
     update_svg('darkmode.svg', stats)
     update_svg('lightmode.svg', stats)
