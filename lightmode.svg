@@ -17,7 +17,7 @@
         .ascii { letter-spacing: 2px; }
         .side-text { font-size: 19.9px; }
     </style>
-    <rect width="100%" height="100%" fill="#f6f8fa" rx="15" />
+    <rect width="100%" height="100%" fill="#d5d8db" rx="15" />
         <text x="15" y="30" fill="#24292f" class="ascii">
             <tspan x="15" y="30">                        :;:                                     ;xXX$$$$XXX+                        </tspan>
             <tspan x="15" y="45">                        :;;                 ...:::::...         ;xXXXX$$XXX+                        </tspan>
