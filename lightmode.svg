@@ -100,8 +100,8 @@
     <text x="15" y="840" class="side">- Currently Reading -————————————————————————-—-</text>
     <text x="15" y="880" class="side"><tspan class="cc">. </tspan><tspan class="key">Title</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">Monster</tspan></text>
     <text x="15" y="920" class="side"><tspan class="cc">. </tspan><tspan class="key">Author</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">Urasawa Naoki</tspan></text>
-    <text x="15" y="960" class="side"><tspan class="cc">. </tspan><tspan class="key">Total Chapters</tspan>:<tspan class="cc"> ....... </tspan><tspan class="value">162</tspan> | <tspan class="key">Read</tspan>: <tspan class="value">22</tspan></text>
-    <text x="15" y="1000" class="side"><tspan class="cc">. </tspan><tspan class="key">Progress</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">[█------------] 13.6%</tspan></text>
+    <text x="15" y="960" class="side"><tspan class="cc">. </tspan><tspan class="key">Total Chapters</tspan>:<tspan class="cc"> ....... </tspan><tspan class="value">162</tspan> | <tspan class="key">Read</tspan>: <tspan class="value">29</tspan></text>
+    <text x="15" y="1000" class="side"><tspan class="cc">. </tspan><tspan class="key">Progress</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">[██-----------] 17.9%</tspan></text>
     <text x="15" y="1040" class="side"><tspan class="cc">. </tspan><tspan class="key">Start Date</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">2026-11-07</tspan></text>
     <text x="600" y="840" class="side">- Recently Completed -————————————————-—-</text>
     <text x="600" y="880" class="side"><tspan class="cc">. </tspan><tspan class="value">1. Maybe Meant to Be (11/07/2026)</tspan></text>
@@ -112,14 +112,14 @@
     <text x="1104" y="840" class="side">- Manga Stats -————————————————————-—-</text>
     <text x="1104" y="880" class="side"><tspan class="cc">. </tspan><tspan class="key">Completed</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">5 series</tspan></text>
     <text x="1104" y="920" class="side"><tspan class="cc">. </tspan><tspan class="key">Reading</tspan>:<tspan class="cc"> ................. </tspan><tspan class="value">42 series</tspan></text>
-    <text x="1104" y="960" class="side"><tspan class="cc">. </tspan><tspan class="key">Chapters Read</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">2,454</tspan></text>
+    <text x="1104" y="960" class="side"><tspan class="cc">. </tspan><tspan class="key">Chapters Read</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">2,461</tspan></text>
     <text x="1104" y="1000" class="side"><tspan class="cc">. </tspan><tspan class="key">Mean Score</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">8.18 / 10</tspan></text>
     <text x="15" y="1120" class="side">- Hardware Languages -———————————————————————-—-</text>
     <text x="15" y="1160" class="side"><tspan class="cc">. </tspan><tspan fill="#555555">████████████████████████████████████</tspan><tspan fill="#f34b7d">████</tspan><tspan fill="#b2b7f8">███</tspan><tspan fill="#6E4C13">█</tspan></text>
-    <text x="15" y="1200" class="side"><tspan class="cc">. </tspan><tspan fill="#555555">██</tspan> <tspan class="key">C</tspan>:<tspan class="cc"> ................................ </tspan><tspan class="value">81.7%</tspan></text>
+    <text x="15" y="1200" class="side"><tspan class="cc">. </tspan><tspan fill="#555555">██</tspan> <tspan class="key">C</tspan>:<tspan class="cc"> ................................ </tspan><tspan class="value">81.8%</tspan></text>
     <text x="15" y="1240" class="side"><tspan class="cc">. </tspan><tspan fill="#f34b7d">██</tspan> <tspan class="key">C++</tspan>:<tspan class="cc"> ............................... </tspan><tspan class="value">9.2%</tspan></text>
     <text x="15" y="1280" class="side"><tspan class="cc">. </tspan><tspan fill="#b2b7f8">██</tspan> <tspan class="key">Verilog</tspan>:<tspan class="cc"> ........................... </tspan><tspan class="value">6.2%</tspan></text>
-    <text x="15" y="1320" class="side"><tspan class="cc">. </tspan><tspan fill="#6E4C13">██</tspan> <tspan class="key">Assembly</tspan>:<tspan class="cc"> .......................... </tspan><tspan class="value">2.9%</tspan></text>
+    <text x="15" y="1320" class="side"><tspan class="cc">. </tspan><tspan fill="#6E4C13">██</tspan> <tspan class="key">Assembly</tspan>:<tspan class="cc"> .......................... </tspan><tspan class="value">2.8%</tspan></text>
     <text x="600" y="1120" class="side">- Contributions (last 12 months) -————————————————————————————————————————————-—-</text>
     <rect x="624" y="1146" width="14" height="14" rx="3" fill="#c2c7cc"/>
     <rect x="624" y="1164" width="14" height="14" rx="3" fill="#c2c7cc"/>
@@ -490,6 +490,7 @@
     <rect x="1560" y="1182" width="14" height="14" rx="3" fill="#40c463"/>
     <rect x="1560" y="1200" width="14" height="14" rx="3" fill="#c2c7cc"/>
     <rect x="1560" y="1218" width="14" height="14" rx="3" fill="#c2c7cc"/>
+    <rect x="1560" y="1236" width="14" height="14" rx="3" fill="#c2c7cc"/>
     <text x="600" y="1320" class="side"><tspan class="cc">. </tspan><tspan class="key">Total</tspan>: <tspan class="value">315</tspan> | <tspan class="key">Current Streak</tspan>: <tspan class="value">0 days</tspan> | <tspan class="key">Longest</tspan>: <tspan class="value">5 days</tspan></text>
-    <text x="1585" y="1365" class="note" text-anchor="end">last updated 2026-11-12 11:08 UTC</text>
+    <text x="1585" y="1365" class="note" text-anchor="end">last updated 2026-11-13 12:45 UTC</text>
 </svg>
