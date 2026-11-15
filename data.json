@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T14:23:21Z",
+  "updated": "2026-11-15T09:55:15Z",
   "github": {
     "fetched_at": "2026-11-15T02:41:25Z",
     "created_at": "2019-06-17T17:56:07Z",
@@ -2182,7 +2182,7 @@
       "title": "Monster",
       "author": "Urasawa Naoki",
       "chapters": 162,
-      "read": 29,
+      "read": 30,
       "start_date": "2026-11-07"
     },
     "completed": [
@@ -2210,7 +2210,7 @@
     "stats": {
       "completed": 5,
       "reading": 42,
-      "chapters_read": 2461,
+      "chapters_read": 2462,
       "mean_score": 8.18
     }
   }
