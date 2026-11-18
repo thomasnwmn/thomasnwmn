@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-18T09:12:38Z",
+  "updated": "2026-11-18T23:45:23Z",
   "github": {
-    "fetched_at": "2026-11-18T09:12:38Z",
+    "fetched_at": "2026-11-18T23:45:23Z",
     "created_at": "2019-06-17T17:56:07Z",
     "repos": 25,
     "contributed": 1,
@@ -37,14 +37,14 @@
         "size": 182479
       },
       {
+        "name": "HTML",
+        "color": "#e34c26",
+        "size": 132441
+      },
+      {
         "name": "TeX",
         "color": "#3D6117",
         "size": 132225
-      },
-      {
-        "name": "HTML",
-        "color": "#e34c26",
-        "size": 130694
       },
       {
         "name": "Java",
@@ -59,7 +59,7 @@
       {
         "name": "Verilog",
         "color": "#b2b7f8",
-        "size": 33578
+        "size": 39461
       },
       {
         "name": "CMake",
@@ -102,9 +102,24 @@
         "size": 1100
       },
       {
+        "name": "Wolfram Language",
+        "color": "#dd1100",
+        "size": 339
+      },
+      {
         "name": "sed",
         "color": "#64b970",
         "size": 69
+      },
+      {
+        "name": "Standard ML",
+        "color": "#dc566d",
+        "size": 32
+      },
+      {
+        "name": "Scheme",
+        "color": "#1e4aec",
+        "size": 20
       }
     ],
     "calendar": {
