@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="1600px" height="1390px" viewBox="0 0 1600 1390" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" role="img" aria-labelledby="card-title card-desc" font-size="10.3px" font-family="ConsolasFallback,Consolas,monospace">
     <title id="card-title">Thomas Newman&#x27;s GitHub profile card</title>
-    <desc id="card-desc">Education: Computer Engineering @ YorkU. Interests Hardware: Computer Org &amp; Architecture. Interests Hardware: Digital Logic Design. Interests Software: Object-Oriented Programming. Hobbies: Gaming, Studying. Languages Hardware: Verilog, C/C++. Languages Programming: TSX, Python, Java. GitHub: thomasnwmn. Website: www.thomasnewman.ca. Email: tnewman057@gmail.com. GitHub: 25 repositories, 394 commits, 1 stars, 9 followers. Currently reading Monster.</desc>
+    <desc id="card-desc">Education: Computer Engineering @ YorkU. Interests Hardware: Computer Org &amp; Architecture. Interests Hardware: Digital Logic Design. Interests Software: Object-Oriented Programming. Hobbies: Gaming, Studying. Languages Hardware: Verilog, C/C++. Languages Programming: TSX, Python, Java. GitHub: thomasnwmn. Website: www.thomasnewman.ca. Email: tnewman057@gmail.com. GitHub: 25 repositories, 396 commits, 1 stars, 9 followers. Currently reading Monster.</desc>
     <style>
         @font-face {
             src: local('Consolas'), local('Consolas Bold');
@@ -94,8 +94,8 @@
     <text x="850" y="550" class="side"><tspan class="cc">. </tspan><tspan class="key">Email</tspan>:<tspan class="cc"> ....................... </tspan><tspan class="value">tnewman057@gmail.com</tspan></text>
     <text x="850" y="630" class="side">- GitHub Stats -——————————————————————————————————————————-—-</text>
     <text x="850" y="670" class="side"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> .... </tspan><tspan class="value">25</tspan> {<tspan class="key">Contributed</tspan>: <tspan class="value">1</tspan>} | <tspan class="key">Stars</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">1</tspan></text>
-    <text x="850" y="710" class="side"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>:<tspan class="cc"> .................. </tspan><tspan class="value">394</tspan> | <tspan class="key">Followers</tspan>:<tspan class="cc"> ............ </tspan><tspan class="value">9</tspan></text>
-    <text x="850" y="750" class="side"><tspan class="cc">. </tspan><tspan class="key">Lines of Code on GitHub</tspan>:<tspan class="cc"> </tspan><tspan class="value">101,027</tspan> (<tspan class="add">2,361,458++</tspan>, <tspan class="del">2,260,431--</tspan>)</text>
+    <text x="850" y="710" class="side"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>:<tspan class="cc"> .................. </tspan><tspan class="value">396</tspan> | <tspan class="key">Followers</tspan>:<tspan class="cc"> ............ </tspan><tspan class="value">9</tspan></text>
+    <text x="850" y="750" class="side"><tspan class="cc">. </tspan><tspan class="key">Lines of Code on GitHub</tspan>:<tspan class="cc"> </tspan><tspan class="value">101,046</tspan> (<tspan class="add">2,361,482++</tspan>, <tspan class="del">2,260,436--</tspan>)</text>
     <text x="850" y="790" class="side"><tspan class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc"> ................................. </tspan><tspan class="value">7 years, 5 months</tspan></text>
     <text x="15" y="840" class="side">- Currently Reading -————————————————————————-—-</text>
     <text x="15" y="880" class="side"><tspan class="cc">. </tspan><tspan class="key">Title</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">Monster</tspan></text>
@@ -487,7 +487,7 @@
     <rect x="1542" y="1254" width="14" height="14" rx="3" fill="#161b22"/>
     <rect x="1560" y="1146" width="14" height="14" rx="3" fill="#161b22"/>
     <rect x="1560" y="1164" width="14" height="14" rx="3" fill="#161b22"/>
-    <rect x="1560" y="1182" width="14" height="14" rx="3" fill="#161b22"/>
-    <text x="600" y="1320" class="side"><tspan class="cc">. </tspan><tspan class="key">Total</tspan>: <tspan class="value">335</tspan> | <tspan class="key">Current Streak</tspan>: <tspan class="value">0 days</tspan> | <tspan class="key">Longest</tspan>: <tspan class="value">5 days</tspan></text>
-    <text x="1585" y="1365" class="note" text-anchor="end">last updated 2026-11-24 06:57 UTC</text>
+    <rect x="1560" y="1182" width="14" height="14" rx="3" fill="#0e4429"/>
+    <text x="600" y="1320" class="side"><tspan class="cc">. </tspan><tspan class="key">Total</tspan>: <tspan class="value">337</tspan> | <tspan class="key">Current Streak</tspan>: <tspan class="value">1 day</tspan> | <tspan class="key">Longest</tspan>: <tspan class="value">5 days</tspan></text>
+    <text x="1585" y="1365" class="note" text-anchor="end">last updated 2026-11-25 02:46 UTC</text>
 </svg>
